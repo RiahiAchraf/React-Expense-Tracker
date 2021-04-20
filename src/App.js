@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+import { Header } from './Components/Header/Header';
+import { Balance } from './Components/Balance/Balance';
+import { IncExp } from './Components/IncExp/IncExp';
+import { TransList } from './Components/TransList/TransList';
+import { AddTran } from './Components/AddTran/AddTran';
+
+import { GlobalProvider } from './Context/GlobalState';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      <Header />
+      <div className="container">
+        <Balance />
+        <IncExp />
+        <TransList />
+        <AddTran />
+      </div>
+    </GlobalProvider>
   );
 }
 
-export default App;
+export default App; // stop at 36

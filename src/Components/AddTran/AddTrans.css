@@ -1,0 +1,34 @@
+label {
+  display: block;
+  margin: 20px 0 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  width: 100%;
+  border: 1px solid #dedede;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type='text']:focus,
+input[type='number']:focus {
+  outline: 1px solid #9c87fd;
+}
+
+.btn {
+  width: 100%;
+  background-color: #9c87fd;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px 0 30px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.btn:focus {
+  outline: none;
+  opacity: 0.8;
+}
